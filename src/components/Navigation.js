@@ -80,6 +80,18 @@ const Navigation = () => {
               <MenuItem onClick={handleMenuClose}>
                 <NavLink to="/undoredo">Undo and redo</NavLink>
               </MenuItem>
+              <MenuItem onClick={handleMenuClose}>
+                <NavLink to="/canvashouse">Canvas house</NavLink>
+              </MenuItem>
+              <MenuItem onClick={handleMenuClose}>
+                <NavLink to="/currencyconverter">Currency converter</NavLink>
+              </MenuItem>
+              <MenuItem onClick={handleMenuClose}>
+                <NavLink to="/translation">Translation</NavLink>
+              </MenuItem>
+              <MenuItem onClick={handleMenuClose}>
+                <NavLink to="/contextmenu">Context menu</NavLink>
+              </MenuItem>
             </Menu>
             </div>
           </Toolbar>

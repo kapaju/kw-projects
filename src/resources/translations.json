@@ -1,0 +1,14 @@
+{
+	"en": {
+		"REV_INPUT": "Input:",
+		"REV_OUTPUT": "Reversed:"
+	},
+	"fi": {
+		"REV_INPUT": "Peilattava syöte:",
+		"REV_OUTPUT": "Peilikuva:"
+    },
+    "es": {
+        "REV_INPUT": "Entrada:",
+        "REV_OUTPUT": "Invertido:"
+    }
+}

@@ -14,6 +14,9 @@ import PersonForm from './components/PersonForm'
 import DragDrop from './components/DragDrop'
 import UndoRedo from './components/UndoRedo'
 import CanvasHouse from './components/CanvasHouse'
+import CurrencyConverter from './components/CurrencyConverter'
+import Translations from './components/Translations'
+import ContextMenu from './components/ContextMenu'
  
 const App = () => {
 
@@ -21,18 +24,21 @@ const App = () => {
        <BrowserRouter>
         <div>
             <Switch>
-             <Route path="/" component={Home} exact />
-             <Route path="/binaryconverter" component={BinaryConverter} />
-             <Route path="/mousedata" component={MouseData} />
-             <Route path="/anecdotes" component={Anecdotes} />
-             <Route path="/colors" component={Colors} />
-             <Route path="/unicafe" component={Unicafe} />
-             <Route path="/colorslider" component={ColorSlider} />
-             <Route path="/dates" component={Dates} />
-             <Route path="/personform" component={PersonForm} />
-             <Route path="/dragdrop" component={DragDrop} />
-             <Route path="/undoredo" component={UndoRedo} />
-             <Route path="/canvashouse" component={CanvasHouse} />
+             <Route relative path="/" component={Home} exact />
+             <Route relative path="/binaryconverter" component={BinaryConverter} />
+             <Route relative path="/mousedata" component={MouseData} />
+             <Route relative path="/anecdotes" component={Anecdotes} />
+             <Route relative path="/colors" component={Colors} />
+             <Route relative path="/unicafe" component={Unicafe} />
+             <Route relative path="/colorslider" component={ColorSlider} />
+             <Route relative path="/dates" component={Dates} />
+             <Route relative path="/personform" component={PersonForm} />
+             <Route relative path="/dragdrop" component={DragDrop} />
+             <Route relative path="/undoredo" component={UndoRedo} />
+             <Route relative path="/canvashouse" component={CanvasHouse} />
+             <Route relative path="/currencyconverter" component={CurrencyConverter} />
+             <Route relative path="/translation" component={Translations} />
+             <Route relative path="/contextmenu" component={ContextMenu} />
             </Switch>
            <Navigation />
         </div> 
