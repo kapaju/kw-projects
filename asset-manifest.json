@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kw-projects/static/css/main.0347fab8.chunk.css",
+    "main.css": "/kw-projects/static/css/main.5654c2a9.chunk.css",
     "main.js": "/kw-projects/static/js/main.6f48371b.chunk.js",
     "main.js.map": "/kw-projects/static/js/main.6f48371b.chunk.js.map",
     "runtime-main.js": "/kw-projects/static/js/runtime-main.a817ad42.js",
@@ -10,13 +10,13 @@
     "static/js/3.cdf608cd.chunk.js": "/kw-projects/static/js/3.cdf608cd.chunk.js",
     "static/js/3.cdf608cd.chunk.js.map": "/kw-projects/static/js/3.cdf608cd.chunk.js.map",
     "index.html": "/kw-projects/index.html",
-    "static/css/main.0347fab8.chunk.css.map": "/kw-projects/static/css/main.0347fab8.chunk.css.map",
+    "static/css/main.5654c2a9.chunk.css.map": "/kw-projects/static/css/main.5654c2a9.chunk.css.map",
     "static/js/2.1a48ea63.chunk.js.LICENSE.txt": "/kw-projects/static/js/2.1a48ea63.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a817ad42.js",
     "static/js/2.1a48ea63.chunk.js",
-    "static/css/main.0347fab8.chunk.css",
+    "static/css/main.5654c2a9.chunk.css",
     "static/js/main.6f48371b.chunk.js"
   ]
 }
