@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
  
 import Navigation from './components/Navigation'
 import Home from './components/Home'
-import MouseData from './components/MouseData'
 import BinaryConverter from './components/BinaryConverter'
 import Anecdotes from './components/Anecdotes'
 import Colors from './components/Colors'
@@ -24,9 +23,8 @@ const App = () => {
        <BrowserRouter>
         <div>
             <Switch>
-             <Route relative path="/" component={Home} exact />
+             <Route relative path="/kw-projects" component={Home} />
              <Route relative path="/binaryconverter" component={BinaryConverter} />
-             <Route relative path="/mousedata" component={MouseData} />
              <Route relative path="/anecdotes" component={Anecdotes} />
              <Route relative path="/colors" component={Colors} />
              <Route relative path="/unicafe" component={Unicafe} />

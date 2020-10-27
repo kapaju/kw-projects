@@ -47,51 +47,48 @@ const Navigation = () => {
 							open={menuOpen}
 							onClose={handleMenuClose}
 						>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/">Home</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/binaryconverter">Binary converter</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/anecdotes">Anecdotes</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/colors">Colors</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/mousedata">Mouse data</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/unicafe">Unicafe</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/colorslider">RGB slider</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/dates">Dates</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/personform">Persons</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/dragdrop">Drag and drop</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/undoredo">Undo and redo</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/canvashouse">Canvas house</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/currencyconverter">Currency converter</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/translation">Translation</NavLink>
-              </MenuItem>
-              <MenuItem onClick={handleMenuClose}>
-                <NavLink to="/contextmenu">Context menu</NavLink>
-              </MenuItem>
+              <NavLink to="/kw-projects">
+                <MenuItem onClick={handleMenuClose}>Home</MenuItem>
+              </NavLink>
+              <NavLink to="/binaryconverter">
+                <MenuItem onClick={handleMenuClose}>Binary Converter</MenuItem> 
+              </NavLink>
+              <NavLink to="/anecdotes">
+                <MenuItem onClick={handleMenuClose}>Anecdotes</MenuItem>
+              </NavLink>  
+              <NavLink to="/colors">
+                <MenuItem onClick={handleMenuClose}>Colors</MenuItem>
+              </NavLink>  
+              <NavLink to="/unicafe">
+                <MenuItem onClick={handleMenuClose}>Unicafe</MenuItem>
+              </NavLink>  
+              <NavLink to="/colorslider">
+                <MenuItem onClick={handleMenuClose}>RGB slider</MenuItem>
+              </NavLink>  
+              <NavLink to="/dates">
+                <MenuItem onClick={handleMenuClose}>Dates</MenuItem>
+              </NavLink>
+              <NavLink to="/personform">
+                <MenuItem onClick={handleMenuClose}>Persons</MenuItem>
+              </NavLink>
+              <NavLink to="/dragdrop">
+                <MenuItem onClick={handleMenuClose}>Drag and drop</MenuItem>
+              </NavLink>
+              <NavLink to="/undoredo">
+                <MenuItem onClick={handleMenuClose}>Undo and redo</MenuItem>
+              </NavLink>
+              <NavLink to="/canvashouse">
+                <MenuItem onClick={handleMenuClose}>Canvas house</MenuItem>
+              </NavLink>
+              <NavLink to="/currencyconverter">
+                <MenuItem onClick={handleMenuClose}>Currency converter</MenuItem>
+              </NavLink>
+              <NavLink to="/translation">
+                <MenuItem onClick={handleMenuClose}>Translation</MenuItem>
+              </NavLink>
+              <NavLink to="/contextmenu">
+                <MenuItem onClick={handleMenuClose}>Context menu</MenuItem>
+              </NavLink>
             </Menu>
             </div>
           </Toolbar>
