@@ -1,101 +1,65 @@
 import React from 'react';
 import Slider from '@material-ui/core/Slider';
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
 const ColorSlider = () => {
 
-    const [background, setBackground] = React.useState("rgb(255, 255, 255)");
-    const [redValue, setRedValue] = React.useState(255);
-    const [blueValue, setBlueValue] = React.useState(255);
-    const [greenValue, setGreenValue] = React.useState(255);
- 
-    const useStyles = makeStyles(theme =>({
-        boxStyle: {
-            height: 300,
-            border: "1px solid black",
-            width: 150,
-            margin: theme.spacing(5),
-            padding: theme.spacing(6),
-            backgroundColor: background,
-        },
-        sliderStyle: {
-            marginRight: theme.spacing(1),
-            marginLeft: theme.spacing(1),
-            color: "rgb(0, 0, 0)",
-        },
-        textStyle: {
-            marginTop: theme.spacing(2),
-        }
-    }));
+    const [red, setRed] = React.useState(255);
+	const [green, setGreen] = React.useState(255);
+	const [blue, setBlue] = React.useState(255);
+	
+	const updateColor = (component, value) => {
+		if (component === 0)
+			setRed(value);
+		if (component === 1)
+			setGreen(value);
+		if (component === 2)
+			setBlue(value);
+	}
+	
+	const color = "rgb(" + red + "," + green + "," + blue + ")";
 
-    const classes = useStyles();
-
-    const updateColor = (event, newValue) => {
-
-        if (event.target.id === "red") {
-            setRedValue(newValue);
-        }
-        else if (event.target.id === "green") {
-            setGreenValue(newValue);
-        }
-        else if (event.target.id === "blue") {
-            setBlueValue(newValue);
-        }
-       
-        
-        let temp = "rgb(" + redValue + ", " + blueValue + ", " + greenValue + ")";
-        setBackground(temp);
-    }
-
-
-    return (
-
-        <div>
-            <Box className={classes.boxStyle}>
-                <Slider
-                    id="red"
-                    orientation="vertical"
-                    valueLabelDisplay="auto"
-                    value={redValue}
-                    step={1}
-                    min={0}
-                    max={255}
-                    className={classes.sliderStyle}
-                    onChange={updateColor}
-                />
-                <Slider
-                    id="green"
-                    orientation="vertical"
-                    valueLabelDisplay="auto"
-                    value={greenValue}
-                    step={1}
-                    min={0}
-                    max={255}
-                    className={classes.sliderStyle}
-                    onChange={updateColor}
-                />
-                <Slider
-                    id="blue"
-                    orientation="vertical"
-                    valueLabelDisplay="auto"
-                    value={blueValue}
-                    step={1}
-                    min={0}
-                    max={255}
-                    className={classes.sliderStyle}
-                    onChange={updateColor}
-                />
-                <Typography className={classes.textStyle}>
-                    {background}
+	return (
+		<div style={{backgroundColor: color, padding: "10%", height: "50%", width: 200, textAlign:"center", border: "1px solid black"}}>
+            <h1 style={{marginBottom: 10, fontSize: "1.5em"}}>
+                RGB slider
+            </h1>
+            <div style={{height: "12em"}}>
+				<Slider
+                    style={{color: "red"}}
+					value={red}
+					orientation="vertical"
+					valueLabelDisplay="auto"
+					step={1}
+					min={0}
+					max={255}
+					onChange={(event, value) => updateColor(0, value)}
+				/>
+				<Slider
+                    style={{color: "green"}}
+					value={green}
+					orientation="vertical"
+					valueLabelDisplay="auto"
+					step={1}
+					min={0}
+					max={255}
+					onChange={(event, value) => updateColor(1, value)}
+				/>
+				<Slider
+                    style={{color: "blue"}}
+					value={blue}
+					orientation="vertical"
+					valueLabelDisplay="auto"
+					step={1}
+					min={0}
+					max={255}
+					onChange={(event, value) => updateColor(2, value)}
+				/>
+                <Typography>
+                    {color}
                 </Typography>
-            </Box>
-            
-
-        </div>
-
-        
+			</div>
+		</div>      
     );
 }
 

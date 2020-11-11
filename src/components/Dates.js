@@ -10,8 +10,10 @@ import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles(theme =>({
     paperStyle: {
-        width: 500,
+        minWidth: 300,
+        maxWidth: 600,
         padding: theme.spacing(2),
+        backgroundColor: '#FCEADA'
     },
     buttons: {
         marginLeft: theme.spacing(1),
@@ -49,6 +51,9 @@ const Dates = () => {
     return (
    
         <Paper className={classes.paperStyle}>
+            <h1>
+                Date picker
+            </h1>
             <List>
                 {items.map((item, i) => 
                         <ListItem
@@ -77,6 +82,7 @@ const Dates = () => {
 
             <Button 
                 variant="contained" 
+                color="primary"
                 className={classes.buttons} 
                 onClick={add}
             >

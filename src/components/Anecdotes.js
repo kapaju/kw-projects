@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
-import ReactDOM from 'react-dom';
-
+import Button from '@material-ui/core/Button';
 
 const TopAnecdote = ({anecdotes, votes}) => {
   
@@ -15,12 +14,17 @@ const TopAnecdote = ({anecdotes, votes}) => {
   )
 }
 
-const Button = ({text, handleClick}) => {
+const MyButton = ({text, handleClick}) => {
 
   return(
-    <button onClick={handleClick}>
+    <Button 
+      onClick={handleClick}
+      variant="contained" 
+      color="primary"
+      style={{margin: 2}}
+    >
       {text}
-    </button>
+    </Button>
   )
 
 }
@@ -51,7 +55,7 @@ const Anecdotes = () => {
   }
 
   return(
-    <div>
+    <div style={{marginLeft:'5%', marginRight:'5%', textAlign: 'center'}}>
       <h1>Anecdote of the day</h1>
       <p>
         {anecdotes[selected]}
@@ -59,8 +63,8 @@ const Anecdotes = () => {
       <p>
         has {votes[selected]} votes
       </p>
-      <Button text={'vote'} handleClick={voteAnecdote}/>
-      <Button text={'next anecdote'} handleClick={selectRandom}/>
+      <MyButton text={'vote'} handleClick={voteAnecdote}/>
+      <MyButton text={'next anecdote'} handleClick={selectRandom}/>
       <TopAnecdote anecdotes={anecdotes} votes={votes}/>
     </div>
   )

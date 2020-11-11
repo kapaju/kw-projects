@@ -5,7 +5,6 @@ import Navigation from './components/Navigation'
 import Home from './components/Home'
 import BinaryConverter from './components/BinaryConverter'
 import Anecdotes from './components/Anecdotes'
-import Colors from './components/Colors'
 import Unicafe from './components/Unicafe'
 import ColorSlider from './components/ColorSlider'
 import Dates from './components/Dates'
@@ -16,6 +15,7 @@ import CanvasHouse from './components/CanvasHouse'
 import CurrencyConverter from './components/CurrencyConverter'
 import Translations from './components/Translations'
 import ContextMenu from './components/ContextMenu'
+import Dashboard from './components/Dashboard'
  
 const App = () => {
 
@@ -26,7 +26,6 @@ const App = () => {
              <Route relative path="/kw-projects" component={Home} />
              <Route relative path="/binaryconverter" component={BinaryConverter} />
              <Route relative path="/anecdotes" component={Anecdotes} />
-             <Route relative path="/colors" component={Colors} />
              <Route relative path="/unicafe" component={Unicafe} />
              <Route relative path="/colorslider" component={ColorSlider} />
              <Route relative path="/dates" component={Dates} />
@@ -37,6 +36,7 @@ const App = () => {
              <Route relative path="/currencyconverter" component={CurrencyConverter} />
              <Route relative path="/translation" component={Translations} />
              <Route relative path="/contextmenu" component={ContextMenu} />
+             <Route relative path="/dashboard" component={Dashboard} />
             </Switch>
            <Navigation />
         </div> 

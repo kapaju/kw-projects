@@ -6,8 +6,7 @@
  */
 
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-
+import Button from '@material-ui/core/Button';
 
 const StatisticsLine = ({text, value}) => {
 
@@ -54,12 +53,17 @@ const Statistics = ({good, neutral, bad}) => {
   }
 }
 
-const Button = (props) => {
+const MyButton = (props) => {
 
   return(
-      <button onClick={props.handleClick}>
+      <Button 
+        onClick={props.handleClick}
+        variant="contained" 
+        color="primary"
+        style={{margin: 2}}
+      >
         {props.text}
-      </button>
+      </Button>
   )
 
 }
@@ -76,11 +80,11 @@ const Unicafe = () => {
   
   return(
 
-    <div>
+    <div style={{marginLeft:'5%'}}>
       <h1>Give feedback</h1>
-      <Button text={'good'} handleClick={handleGood}/>
-      <Button text={'neutral'} handleClick={handleNeutral}/>
-      <Button text={'bad'} handleClick={handleBad}/>
+      <MyButton text={'good'} handleClick={handleGood}/>
+      <MyButton text={'neutral'} handleClick={handleNeutral}/>
+      <MyButton text={'bad'} handleClick={handleBad}/>
       <h1>Statistics</h1>
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>

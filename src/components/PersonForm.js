@@ -15,7 +15,8 @@ import TableRow from '@material-ui/core/TableRow';
 
 const useStyles = makeStyles(theme =>({
     paperStyle: {
-        width: 500,
+        minWidth: 250,
+        maxWidth: 600,
         padding: theme.spacing(2),
     },
     buttons: {

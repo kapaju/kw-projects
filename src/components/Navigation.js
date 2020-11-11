@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
       <div>
-        <AppBar>
+        <AppBar style={{backgroundColor:'#552E78'}}>
           <Toolbar>
             <div>
             <IconButton 
@@ -50,15 +50,15 @@ const Navigation = () => {
               <NavLink to="/kw-projects">
                 <MenuItem onClick={handleMenuClose}>Home</MenuItem>
               </NavLink>
+              <NavLink to="/dashboard">
+                <MenuItem onClick={handleMenuClose}>Dashboard</MenuItem>
+              </NavLink>
               <NavLink to="/binaryconverter">
                 <MenuItem onClick={handleMenuClose}>Binary Converter</MenuItem> 
               </NavLink>
               <NavLink to="/anecdotes">
                 <MenuItem onClick={handleMenuClose}>Anecdotes</MenuItem>
-              </NavLink>  
-              <NavLink to="/colors">
-                <MenuItem onClick={handleMenuClose}>Colors</MenuItem>
-              </NavLink>  
+              </NavLink>   
               <NavLink to="/unicafe">
                 <MenuItem onClick={handleMenuClose}>Unicafe</MenuItem>
               </NavLink>  

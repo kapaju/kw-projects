@@ -33,7 +33,7 @@ const CurrencyConverter = () => {
 	}
 
 	return (
-		<Box border={1} width={400} p={1}>
+		<Box border={1} maxWidth={500} minWidth={250} p={1}>
 			<Typography>Exchange rate at</Typography>
 			<Typography>{df.format(new Date())}</Typography>
 			<Box display="flex" flexDirection="row">
