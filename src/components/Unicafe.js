@@ -82,6 +82,7 @@ const Unicafe = () => {
 
     <div style={{marginLeft:'5%'}}>
       <h1>Give feedback</h1>
+      <p>How was your visit to Unicafe today?</p>
       <MyButton text={'good'} handleClick={handleGood}/>
       <MyButton text={'neutral'} handleClick={handleNeutral}/>
       <MyButton text={'bad'} handleClick={handleBad}/>

@@ -64,7 +64,7 @@ const CanvasHouse = () => {
         />
       </Box>
       <Typography>
-        This image is drawn using Canvas.
+        This image is drawn from scratch with HTML5 Canvas.
       </Typography>
     </div>
 	);
